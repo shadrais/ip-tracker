@@ -9,8 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "install": "^0.13.0",
+    "leaflet": "^1.9.2",
+    "mapbox-gl": "^2.10.0",
+    "npm": "^8.19.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.1.0",
+    "react-map-gl": "^7.0.19"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

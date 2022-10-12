@@ -2,17 +2,34 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+#root {
+  height: 100vh;
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .header-image {
   background: url(./assets/pattern-bg.png) no-repeat center center/cover;
   width: 100%;
-  height: 300px;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.input-comp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,15 +37,91 @@ body {
 
 .input-box {
   height: 3rem;
-  border-radius: 8px 0 0 8px;
+  border-radius: 12px 0 0 12px;
   border: none;
   width: 400px;
   padding: 0 1rem;
+  font-size: 18px;
 }
 
-.button {
+.input-box:focus-visible {
+  outline: none;
+}
+
+.button-main {
   height: 3rem;
   background-color: black;
   width: 3rem;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 12px 12px 0;
+  border: none;
+}
+
+.button-main:hover {
+  cursor: pointer;
+  background: hsl(0, 0%, 17%);
+  border: none;
+}
+
+.card-wrapper {
+  display: grid;
+  place-items: center;
+  padding-top: 5rem;
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.cards {
+  position: absolute;
+  margin: 0 auto;
+  height: 120px;
+  width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 5rem;
+  box-shadow: 0 0 4px;
+  z-index: 2000;
+}
+
+.card-name {
+  font-size: 1rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.vertical-line {
+  height: 75px;
+  background-color: black;
+  width: 1px;
+}
+
+#map {
+  height: 100%;
+}
+
+.maps {
+  /* z-index: -1; */
+  height: 65%;
+}
+
+.map-container {
+  height: 100%;
+}
+
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
 }
