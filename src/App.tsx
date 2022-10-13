@@ -35,7 +35,7 @@ const  App = () => {
   const handleFetch = async(data:string):Promise<void> => { 
     console.log(data)
     try {
-      const res= await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=${'at_s6UmmWDLWtphTqKqGSPbKn9KFFWWs'}&ipAddress=${data}`)
+      const res= await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_IP}&ipAddress=${data}`)
       setData(res.data)
       
     } catch (error) {

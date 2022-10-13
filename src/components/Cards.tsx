@@ -2,7 +2,7 @@ import React from "react";
 import { IP } from "../App";
 
 interface Props {
-  data: IP
+  data: IP | null
 }
 
 const Cards = ({data} : Props) => {

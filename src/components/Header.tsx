@@ -6,7 +6,7 @@ import {IP} from '../App'
 
 interface Props {
   handleFetch: (data:string) => void
-  data: IP |null
+  data: IP | null
 }
 
 
