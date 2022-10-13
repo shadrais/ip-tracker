@@ -6,7 +6,7 @@ import {IP} from '../App'
 
 interface Props {
   handleFetch: (data:string) => void
-  data: IP
+  data: IP |null
 }
 
 
@@ -18,7 +18,7 @@ const Header = ({ handleFetch,data }: Props) => {
 
   return (
     <>
-      <div className="header-image">
+      <div className="header-image"></div>
         <h1>IP ADDRESS TRACKER</h1>
         <div className="input-comp">
           <input
@@ -36,7 +36,7 @@ const Header = ({ handleFetch,data }: Props) => {
         <div className="card-wrapper">
           <Cards data={data} />
         </div>
-      </div>
+      
     </>
   );
 };

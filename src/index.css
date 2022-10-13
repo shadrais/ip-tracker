@@ -21,18 +21,23 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: -1;
+  position: fixed;
 }
 
 h1 {
   color: white;
   font-weight: 700;
   padding: 1rem;
+  text-align: center;
 }
 
 .input-comp {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .input-box {
@@ -76,7 +81,6 @@ h1 {
 }
 
 .cards {
-  position: absolute;
   margin: 0 auto;
   height: 120px;
   width: 800px;
@@ -85,6 +89,35 @@ h1 {
   margin-top: 5rem;
   box-shadow: 0 0 4px;
   z-index: 2000;
+}
+
+@media screen and (max-width: 480px) {
+  .card-wrapper {
+    padding: 0;
+    margin-top: -4rem;
+  }
+
+  .cards {
+    width: 75%;
+    height: 80%;
+  }
+  .card-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .card-items {
+    display: grid;
+    place-items: center;
+  }
 }
 
 .card-name {
